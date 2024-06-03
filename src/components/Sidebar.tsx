@@ -22,7 +22,6 @@ const Sidebar = ({ user }: SiderbarProps) => {
             Horizon
           </h1>
         </Link>
-
         <SidebarIcon
           label="Home"
           route="/"
@@ -47,7 +46,9 @@ const Sidebar = ({ user }: SiderbarProps) => {
           imgURL="/icons/money-send.svg"
           pathname={pathname}
         />
+        User
       </nav>
+      FOOTER
     </section>
   )
 }
