@@ -31,9 +31,12 @@ const SidebarIcon = ({ label, route, imgURL, pathname }: SidebarIconProps) => {
         />
       </div>
       <p
-        className={cn('text-16 font-semibold text-black-2 max-xl:hidden', {
-          '!text-white': isActive,
-        })}
+        className={cn(
+          'text-[16px] leading-[24px] font-semibold text-black-2 max-xl:hidden',
+          {
+            '!text-white': isActive,
+          },
+        )}
       >
         {label}
       </p>
