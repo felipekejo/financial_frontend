@@ -97,6 +97,9 @@ const config = {
           700: '#344054',
           900: '#101828',
         },
+        logo: {
+          1: '#B30B1F',
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',
