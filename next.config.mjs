@@ -1,4 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  basePath: '/financial_frontend',
+  reactStrictMode: true,
+  output: 'export',
+  images: {
+    loader: 'akamai',
+    path: '',
+  },
+  assetPrefix: './',
+}
 
-export default nextConfig;
+export default nextConfig
