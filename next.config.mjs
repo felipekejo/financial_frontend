@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  basePath: '/financial-frontend',
+  output: 'export', // <=== enables static exports
+  reactStrictMode: true,
+}
 
-export default nextConfig;
+export default nextConfig
