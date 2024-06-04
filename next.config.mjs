@@ -1,8 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/financial-frontend',
-  output: 'export', // <=== enables static exports
+  basePath: '/financial_frontend',
   reactStrictMode: true,
+  output: 'export',
+  images: {
+    loader: 'akamai',
+    path: '',
+  },
+  assetPrefix: './',
 }
 
 export default nextConfig
