@@ -14,7 +14,12 @@ export default function RootLayout({
       <Sidebar user={loggedIn} />
       <div className="flex size-full flex-col">
         <div className="flex h-16 items-center justify-between p-5 shadow-creditCard sm:p-8 md:hidden">
-          <Image src="/icons/neko.svg" width={30} height={30} alt="Menu Icon" />
+          <Image
+            src="./icons/neko.svg"
+            width={30}
+            height={30}
+            alt="Menu Icon"
+          />
           <div>
             <MobileNav user={loggedIn} />
           </div>

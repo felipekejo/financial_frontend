@@ -12,7 +12,7 @@ const Sidebar = ({ user }: SiderbarProps) => {
       <nav className="flex flex-col gap-4">
         <Link href="/" className="mb-12 cursor-pointer flex items-center gap-2">
           <Image
-            src="/icons/neko.svg"
+            src="./icons/neko.svg"
             width={34}
             height={34}
             alt="Horizontal Logo"
@@ -25,25 +25,25 @@ const Sidebar = ({ user }: SiderbarProps) => {
         <SidebarIcon
           label="Home"
           route="/"
-          imgURL="/icons/home.svg"
+          imgURL="./icons/home.svg"
           pathname={pathname}
         />
         <SidebarIcon
           label="My Banks"
           route="/my-banks"
-          imgURL="/icons/dollar-circle.svg"
+          imgURL="./icons/dollar-circle.svg"
           pathname={pathname}
         />
         <SidebarIcon
           label="Transaction History"
           route="/transaction-history"
-          imgURL="/icons/transaction.svg"
+          imgURL="./icons/transaction.svg"
           pathname={pathname}
         />
         <SidebarIcon
           label="Transfer Funds"
           route="/payment-transfer"
-          imgURL="/icons/money-send.svg"
+          imgURL="./icons/money-send.svg"
           pathname={pathname}
         />
         User
