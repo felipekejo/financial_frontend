@@ -5,7 +5,8 @@ import { Doughnut } from 'react-chartjs-2'
 
 ChartJS.register(ArcElement, Tooltip, Legend)
 
-const DoughnutChart = ({ accounts }: DoughnutChartProps) => {
+// const DoughnutChart = ({ accounts }: DoughnutChartProps) => {
+const DoughnutChart = () => {
   const data = {
     datasets: [
       {

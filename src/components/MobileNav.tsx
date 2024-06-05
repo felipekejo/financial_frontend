@@ -67,7 +67,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
                   imgURL="/icons/money-send.svg"
                   pathname={pathname}
                 />
-                USER
+                {user.name}
               </nav>
             </SheetClose>
             FOOTER

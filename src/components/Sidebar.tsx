@@ -46,7 +46,7 @@ const Sidebar = ({ user }: SiderbarProps) => {
           imgURL="./icons/money-send.svg"
           pathname={pathname}
         />
-        User
+        {user.name}
       </nav>
       FOOTER
     </section>
