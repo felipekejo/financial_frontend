@@ -3,7 +3,22 @@ import RightSidebar from '@/components/RightSidebar'
 import TotalBalanceBox from '@/components/TotalBalanceBox'
 
 const Home = () => {
-  const loggedIn = { firstName: 'Felipe' }
+  const loggedIn = {
+    firstName: 'John',
+    lastName: 'Doe',
+    $id: '1',
+    email: 'john.doe@email.com',
+    userId: '1',
+    dwollaCustomerUrl: 'string',
+    dwollaCustomerId: 'string',
+    name: 'string',
+    address1: 'string',
+    city: 'string',
+    state: 'string',
+    postalCode: 'string',
+    dateOfBirth: 'string',
+    ssn: 'string',
+  }
 
   const accounts = [
     {
@@ -64,7 +79,7 @@ const Home = () => {
         </header>
         RECENT TRANSACTIONS
       </div>
-      <RightSidebar />
+      <RightSidebar user={loggedIn} transactions={[]} banks={[]} />
     </section>
   )
 }
