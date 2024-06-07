@@ -61,6 +61,27 @@ const Home = () => {
       shareableId: 'string',
     },
   ]
+  const banks = [
+    {
+      $id: 'string',
+      accountId: 'string',
+      bankId: 'string',
+      accessToken: 'string',
+      fundingSourceUrl: 'string',
+      userId: 'string',
+      shareableId: 'string',
+    },
+
+    {
+      $id: 'string',
+      accountId: 'string',
+      bankId: 'string',
+      accessToken: 'string',
+      fundingSourceUrl: 'string',
+      userId: 'string',
+      shareableId: 'string',
+    },
+  ]
   return (
     <section className="no-scrollbar flex w-full flex-row max-xl:max-h-screen max-xl:overflow-y-scroll">
       <div className="no-scrollbar flex w-full flex-1 flex-col gap-8 px-5 sm:px-8 py-7 lg:py-12 xl:max-h-screen xl:overflow-y-scroll">
@@ -79,7 +100,7 @@ const Home = () => {
         </header>
         RECENT TRANSACTIONS
       </div>
-      <RightSidebar user={loggedIn} transactions={[]} banks={[]} />
+      <RightSidebar user={loggedIn} transactions={[]} banks={banks} />
     </section>
   )
 }
