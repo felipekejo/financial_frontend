@@ -5,10 +5,11 @@ import { Separator } from '@/components/ui/separator'
 import Image from 'next/image'
 import Link from 'next/link'
 import googleIcon from '../../../../public/icons/google.svg'
+import { sigInWithEmailAndPassword } from './actions'
 
 const SignIn = () => {
   return (
-    <form action="" className="space-y-4">
+    <form action={sigInWithEmailAndPassword} className="space-y-4">
       <div className="space-y-1">
         <Label htmlFor="email">E-mail</Label>
         <Input id="email" type="email" name="email" />
