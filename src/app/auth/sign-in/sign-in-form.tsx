@@ -9,12 +9,18 @@ import { useFormState } from '@/hooks/useform-state'
 import { AlertTriangle, Loader2 } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
 import googleIcon from '../../../../public/icons/google.svg'
 import { sigInWithEmailAndPassword } from './actions'
 
 const SignInForm = () => {
+  const router = useRouter()
+
   const [{ success, message, errors }, handleSubmit, isPending] = useFormState(
     sigInWithEmailAndPassword,
+    () => {
+      router.push('/')
+    },
   )
 
   return (
